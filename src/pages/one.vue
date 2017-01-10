@@ -27,9 +27,18 @@
 	export default{
 		data(){
 			return {
-				bg:"",
-				circle_bg:"",
-				content:"",
+				// bg:"",
+				// circle_bg:"",
+				// content:"",
+				bg:{
+					background:'white'
+				},
+				circle_bg:{
+					background:"black",
+					color:"whtie",
+					fontSize:"80px"
+				},
+				content:"贵州",
 				ri:"",
 				_bg:"",
 			}
@@ -38,12 +47,12 @@
 			this.origin_action()
 		},
 		computed:{
-			...mapState([
-				"bg",
-				"circle_bg",
-				"content",
-				"s"
-			])
+			// ...mapState([
+			// 	"bg",
+			// 	"circle_bg",
+			// 	"content",
+			// 	"s"
+			// ])
 		},
 		methods:{
 			origin_action(){
