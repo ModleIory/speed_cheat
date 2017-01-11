@@ -8,5 +8,5 @@ export default{
 		color:"whtie",
 		fontSize:"80px"
 	},
-	content:"贵州"
+	content:"即刻"
 }

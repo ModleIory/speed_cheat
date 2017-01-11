@@ -1,0 +1,101 @@
+/*self define father con,if wanner scroll bar,just use these and reset the width and height*/
+.container{
+	overflow: hidden;           
+	position: absolute;
+	width: 100vw;
+	height:100vh; 
+}
+.each{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.each>*{
+	position: relative;
+}
+.each>img{
+	width: 100%;
+	height: auto;
+}
+.each1{
+	background: url(../src/img/p1/bg.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+.each1 img:nth-child(1){
+	top:5%;
+}
+.each1 img:nth-child(2){
+	top:-40%;
+}
+
+.each2{
+	background: url(../src/img/p2/bg.jpg) center center no-repeat;
+	background-size: 100% 100%;
+}
+.each2 img:nth-child(1){
+	top:12%;
+}
+.each2 img:nth-child(2){
+	top:-5%;
+}
+.each2 img:nth-child(3){
+	top:-22%;
+}
+.each2 img:nth-child(4){
+	top:-40%;
+}
+
+.each3{
+	background: url(../src/img/p3/bg.png) center center no-repeat;
+	background-size: 100% 100%;
+	font-family: "微软雅黑";
+}
+.each3 img:nth-child(1){
+	top:0%;
+}
+.each3 img:nth-child(2){
+	top:-14%;
+}
+.each3 button{
+	border:1px solid white;
+	width: 30%;
+	height:5%;
+	border-radius: 20px;
+	background: transparent;
+	color:white;
+	font-weight: bolder;
+	top:-25%;
+	outline: none;
+}
+#loading{
+	width:100vw;height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top:0;left:0;
+	z-index:11;
+	background:black;
+}
+#typing_box{
+	width:70%;
+	background: rgba(255,255,255,0.4);
+	position: relative;
+	top:-10%;
+	height: auto;
+	border-radius: 10px;
+	color:black;
+	font-weight: bold;
+	line-height: 40px;
+	font-size:18px;
+	padding: 20px;
+}
+#arrow{
+	position: fixed;
+	bottom: 30px;
+	z-index:1000;
+	width:8%;
+	margin-left: 46%;
+}
