@@ -52,7 +52,7 @@
 				this.c = jQuery('#center_ball')
 				this.u = jQuery('#up_ball')
 				this.d = jQuery('#down_ball')
-				this.bg = jQuery('#two')
+				this.bg = jQuery('#one')
 				this.d.css({
 					opacity:0
 				})
@@ -367,6 +367,9 @@
 				})
 			},
 			final(){
+				this.bg.css({
+					background:"white"
+				})
 				this.c
 				.transit({
 					color:'black',
@@ -374,7 +377,11 @@
 					borderRadius:0,
 					width:'100vw',
 					height:"100vh"
-				},s*10)
+				},s*10,()=>{
+					this.$route.router.go({
+						name:'two'
+					})
+				})
 			},
 			t(second){
 				const p = new Promise((resolve,reject)=>{
